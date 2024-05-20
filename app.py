@@ -4,10 +4,6 @@ import os
 
 app = Flask(__name__)
 
-# Função para verificar se o arquivo CSV existe
-def file_exists(file_path):
-    return os.path.exists(file_path)
-
 @app.route('/')
 def index():
     return render_template('homepage.html')
@@ -27,15 +23,15 @@ def submit():
         # Diretório onde o arquivo CSV será salvo
         csv_file_path = os.path.join(os.getcwd(), 'data.csv')
 
+        # Verifique se o arquivo CSV já existe
+        file_exists = os.path.isfile(csv_file_path)
+
         try:
             # Salve os dados em um arquivo CSV
             with open(csv_file_path, mode='a', newline='') as file:
                 writer = csv.writer(file)
-
-                # Verifique se o arquivo já existe para evitar escrever o título novamente
-                if not file_exists(csv_file_path):
+                if not file_exists:  # Se o arquivo não existe, escreva o título
                     writer.writerow(['Nome', 'Email', 'CPF', 'Data', 'Horas', 'Bugs', 'Tarefas'])
-
                 writer.writerow([name, email, cpf, data, horas, bugs, tarefas])
         except Exception as e:
             return f"An error occurred while writing to the CSV file: {e}"
