@@ -57,3 +57,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #218838;
 }
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    input[type="submit"] {
+        width: 100%;
+    }
+}
