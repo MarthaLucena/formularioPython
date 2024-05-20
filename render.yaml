@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: formularioPython
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: WEB_CONCURRENCY
+        value: "1"
