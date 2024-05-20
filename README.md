@@ -52,8 +52,7 @@ O aplicativo utiliza o Flask para lidar com as rotas da web e renderizar o formu
 Este aplicativo foi implantado utilizando o serviço web do Render. Você pode acessá-lo em https://formularioPython.onrender.com/.
 <br>
 
-## Você pode acessar o formulário através do QRCode abaixo:
-<br><br>
+### Você também pode acessar o formulário através do QRCode abaixo:
+<br>
 
-![Texto Alternativo](https://github.com/MarthaLucena/formularioPython/blob/main/QRCode.png?width=200)
-
+<img src="QRCode.png" width="250">
