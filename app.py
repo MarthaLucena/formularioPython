@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, Response
 import csv
-import os
+from io import StringIO
 
 app = Flask(__name__)
 
@@ -20,18 +20,18 @@ def submit():
         bugs = request.form['bugs']
         tarefas = request.form['tarefas']
 
-        # Diretório onde o arquivo CSV será salvo
-        csv_file_path = os.path.join(os.getcwd(), 'data.csv')
+        # Crie um arquivo CSV em memória
+        csv_data = StringIO()
+        csv_writer = csv.writer(csv_data)
+        csv_writer.writerow(['name', 'email', 'cpf', 'data', 'horas', 'bugs', 'tarefas'])
+        csv_writer.writerow([name, email, cpf, data, horas, bugs, tarefas])
 
-        try:
-            # Salve os dados em um arquivo CSV
-            with open(csv_file_path, mode='a', newline='') as file:
-                writer = csv.writer(file)
-                writer.writerow([name, email, cpf, data, horas, bugs, tarefas])
-        except Exception as e:
-            return f"An error occurred while writing to the CSV file: {e}"
-
-        return redirect(url_for('index'))
+        # Retorne o arquivo CSV como resposta para download
+        return Response(
+            csv_data.getvalue(),
+            mimetype='text/csv',
+            headers={"Content-disposition":
+                     "attachment; filename=data.csv"})
 
 if __name__ == '__main__':
     app.run(debug=True)
