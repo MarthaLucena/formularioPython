@@ -1,74 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8dc;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
 }
 
 h1 {
-    color: #30706f;
-    text-align: center;
-    font-family: "Lato", sans-serif;
+    color: #000;
+    font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-style: normal;
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 h4 {
-    color: #30706f;
-    text-align: center;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 form {
-    background-color: #30706f;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 label {
     display: block;
-    margin-bottom: 1px;
-    font-size: 15px;
-    color: #fff8dc;
+    margin: 5px 0 5px 0;
+    font-size: 14px;
+    color: #333;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="date"],
-input[type="number"],
-input[type="submit"] {
-    width: 98%;
-    padding: 5px;
-    margin-bottom: 10px;
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 7px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: 0 0 3px #4cb1af;
-
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-    background-color: #8afca4;
-    color: rgb(5, 5, 5);
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 input[type="submit"]:hover {
     background-color: #218838;
 }
 
+.image-container {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 400px;
+    background-color: #ffffff00;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff00;
+}
+
 @media (max-width: 768px) {
     form {
         width: 90%;
-        max-width: 400px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="date"],
-    input[type="number"],
-    input[type="submit"] {
-        width: 100%;
     }
 }
