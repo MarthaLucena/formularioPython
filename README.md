@@ -4,7 +4,7 @@ Este projeto consiste na criação de um sistema para gerar relatórios de desem
 
 ## 1ª Etapa: Formulário Online
 
-Criei um formulário online utilizando Python, hospedado no Render, onde cada funcionário vai preencher um relatório diário com informações como número de bugs resolvidos, horas trabalhadas, etc. Após preencher os campos necessários e enviar as informações utilizando o botão de submit, um arquivo CSV é gerado e o funcionário envia ao gestor, ou pode salvar em alguma pasta específica na rede, ficando a cargo do gestor essa decisão.
+Criei um formulário online utilizando Python, hospedado no Render, onde cada funcionário vai preencher um formulário diariamente com informações como número de bugs resolvidos, horas trabalhadas, etc. Após preencher os campos necessários e enviar as informações utilizando o botão de submit, um arquivo CSV é gerado e o funcionário envia ao gestor, ou pode salvar em alguma pasta específica na rede, ficando a cargo do gestor essa decisão.
 
 ### Repositório do Formulário
 
@@ -54,3 +54,8 @@ Na terceira etapa, o gestor utiliza o Google Colab para gerar gráficos e relat�
 <img src="https://github.com/MarthaLucena/formularioPython/blob/main/imgColab/colab5.png" width="900">
 
 Disponível em (https://github.com/MarthaLucena/formularioPython/blob/main/ProjInd3.ipynb)
+
+<br><br>
+## Desenvolvido para o Projeto Individual do 3º módulo do curso de Análise de Dados da Resilia em parceria com a Prefeitura do Rio, a CNSeg e o Senac Rio.
+
+### *Aluna: Martha Lucena.*
