@@ -16,7 +16,8 @@ Criei um formulário online utilizando Python, hospedado no Render, onde cada fu
 
 Ou utilize o QR Code abaixo para acessar:
 
-![QR Code Formulário](link-do-qrcode)
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/QRCode.png" width="250">
+
 
 ## 2ª Etapa: Canal do Gestor
 
@@ -34,7 +35,9 @@ Esses arquivos são compilados em um único arquivo, que pode ser baixado em for
 
 Ou utilize o QR Code abaixo para acessar:
 
-![QR Code Canal do Gestor](link-do-qrcode)
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/qrcodeCanaldogestor.svg" width="250">
+
+
 
 
 Os arquivos também estão disponíveis na pasta compactada "2app.zip" para facilitar a organização em um único repositório.
@@ -44,4 +47,10 @@ Os arquivos também estão disponíveis na pasta compactada "2app.zip" para faci
 
 Na terceira etapa, o gestor utiliza o Google Colab para gerar gráficos e relatórios de desempenho de toda a equipe. Basta seguir as instruções do prompt na imagem abaixo e fazer o upload do arquivo compilado para o Google Colab.
 
-![Prompt Google Colab](link-da-imagem-do-prompt)
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/imgColab/colab1.png" width="900">
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/imgColab/colab2.png" width="900">
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/imgColab/colab3.png" width="900">
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/imgColab/colab4.png" width="900">
+<img src="https://github.com/MarthaLucena/formularioPython/blob/main/imgColab/colab5.png" width="900">
+
+Disponível em (https://github.com/MarthaLucena/formularioPython/blob/main/ProjInd3.ipynb)
