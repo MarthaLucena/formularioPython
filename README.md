@@ -1,58 +1,47 @@
+# Projeto de Relatório de Desempenho Diário
 
-# Formulário de Progresso Diário
+Este projeto consiste na criação de um sistema para gerar relatórios de desempenho diário dos funcionários. O projeto foi desenvolvido pensando na utilização dessa ferramenta por parte de toda uma equipe, e para isso foi feito em três etapas:
 
-Este é um aplicativo simples desenvolvido em Python usando o framework Flask. Ele permite que os usuários preencham um formulário com informações sobre seu progresso diário, como nome, e-mail, CPF, data, horas trabalhadas, bugs corrigidos e tarefas concluídas. Os dados são salvos em um arquivo CSV para análise posterior.
+## 1ª Etapa: Formulário Online
 
+Criei um formulário online utilizando Python, hospedado no Render, onde cada funcionário vai preencher um relatório diário com informações como número de bugs resolvidos, horas trabalhadas, etc. Após preencher os campos necessários e enviar as informações utilizando o botão de submit, um arquivo CSV é gerado e o funcionário envia ao gestor, ou pode salvar em alguma pasta específica na rede, ficando a cargo do gestor essa decisão.
 
+### Repositório do Formulário
 
-## Como usar
+- [GitHub - Formulário Online](https://github.com/MarthaLucena/formularioPython)
 
-1. Instale as dependências
+### Acesso ao Formulário
 
-Certifique-se de ter o Python e o pip instalados em seu sistema. Em seguida, instale as dependências do projeto com o seguinte comando:
-```http
-  pip install Flask gunicorn
+- [Formulário Online](https://formulariopython.onrender.com)
 
-```
+Ou utilize o QR Code abaixo para acessar:
 
+![QR Code Formulário](link-do-qrcode)
 
+## 2ª Etapa: Canal do Gestor
 
-2. Execute o aplicativo
+Criei o "Canal do Gestor", onde o gestor vai fazer o upload dos arquivos CSV enviados por todos os funcionários. 
+Esses arquivos são compilados em um único arquivo, que pode ser baixado em formato CSV ou Excel.
 
-Para executar o aplicativo localmente, use o seguinte comando:
+### Repositório do Canal do Gestor
 
-```http
-  python app.py
-
-```
-
-O aplicativo estará acessível em http://localhost:5000/
-
+- [GitHub - Canal do Gestor](https://github.com/MarthaLucena/canaldogestor)
 
 
-3. Preencha o formulário
+### Acesso ao Canal do Gestor
 
-Preencha o formulário com suas informações diárias e clique em "Enviar".
+- [Canal do Gestor](https://canaldogestor.onrender.com)
+
+Ou utilize o QR Code abaixo para acessar:
+
+![QR Code Canal do Gestor](link-do-qrcode)
 
 
+Os arquivos também estão disponíveis na pasta compactada "2app.zip" para facilitar a organização em um único repositório.
 
-## Implementação
 
-O aplicativo utiliza o Flask para lidar com as rotas da web e renderizar o formulário HTML. Os dados são coletados do formulário e salvos em um arquivo CSV chamado data.csv. O CSS básico é fornecido para estilizar a página.
+## 3ª Etapa: Geração de Relatórios no Google Colab
 
-## Tecnologias utilizadas
+Na terceira etapa, o gestor utiliza o Google Colab para gerar gráficos e relatórios de desempenho de toda a equipe. Basta seguir as instruções do prompt na imagem abaixo e fazer o upload do arquivo compilado para o Google Colab.
 
-* Python
-* Flask
-* HTML
-* CSS
-
-## Implantação
-
-Este aplicativo foi implantado utilizando o serviço web do Render. Você pode acessá-lo em https://formularioPython.onrender.com/.
-<br>
-
-### Você também pode acessar o formulário através do QRCode abaixo:
-<br>
-
-<img src="QRCode.png" width="250">
+![Prompt Google Colab](link-da-imagem-do-prompt)
